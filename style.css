@@ -1,0 +1,97 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #101114;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+/* Centering the To-Do App */
+.todo-container {
+    width: 90%;
+    max-width: 400px;
+    background: #1C1D20;
+    padding: 20px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+/*styling the input and button */
+form {
+    display: flex;
+    gap: 10px;
+
+}
+
+#todo-input{
+    flex: 1;
+    gap: 10px;
+}
+
+#todo-input{
+    flex: 1;
+    padding: 10px;
+    border: none; /* Removes the default border */
+    border-radius: 5px; /* Rounds the input field edges */
+    outline: none; /* Removes the blue outline on focus */
+    font-size: 16px; /* Increases font size for readability */
+
+}
+
+button {
+    background-color: #00ffc4;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #101114;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #70c4b0;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+ul li {
+    background: #4A4D57;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Media Query for Mobile Screens (max-width: 600px) */
+@media screen and (max-width: 600px) {
+    .todo-container {
+        width: 95%; /* Make it take almost full width */
+        padding: 15px; /* Reduce padding for a compact design */
+    }
+
+    h1 {
+        font-size: 20px; /* Reduce heading size */
+    }
+
+    #todo-input {
+        font-size: 14px; /* Reduce font size in input */
+        padding: 8px; /* Adjust padding */
+    }
+
+    button {
+        font-size: 14px; /* Reduce button text size */
+        padding: 8px 12px; /* Adjust padding */
+    }
+
+    ul li {
+        font-size: 14px; /* Reduce task font size */
+        padding: 8px; /* Adjust padding */
+    }
+}
